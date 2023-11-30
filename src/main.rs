@@ -9,7 +9,6 @@ const BTN: &str = "images/main_menu/button.png";
 
 fn main() {
     App::new()
-        // Game boilerplate
         .add_plugins((DefaultPlugins.set (
             WindowPlugin {
                 primary_window: Some(Window {
@@ -31,7 +30,7 @@ fn button<M: Component>(commands: &mut Commands, marker: M) -> impl Bundle {
     (
         EventFlags::Click | EventFlags::Hover,
         SetCursor { 
-            flags: EventFlags::Click | EventFlags::Hover, 
+            flags: EventFlags::Pressed | EventFlags::Hover, 
             icon: CursorIcon::Hand,
         },
         Interpolate::<Offset>::ease(EaseFunction::SineInOut, Vec2::ZERO, 0.3),

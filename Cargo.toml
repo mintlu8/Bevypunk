@@ -16,5 +16,5 @@ opt-level = 3
 
 # bevy_lunex = "0.0.9"
 bevy = { version = "0.12.0" }
-bevy_aoui = {version = "0.1.0", path = "../bevy-aoui/aoui"}
-bevy_aoui_widgets = {version = "0.1.0", path = "../bevy-aoui/widgets"}
+bevy_aoui = {version = "0.2.0"}
+bevy_aoui_widgets = {version = "0.2.0"}
